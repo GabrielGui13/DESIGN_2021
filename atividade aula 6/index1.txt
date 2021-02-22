@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <header>
+    </header>
+    <nav>
+        <section>
+            cumae <aside> macho </aside>
+        </section>
+        <article> 
+            ta na hora de molhar o biscoito
+        </article>
+    </nav>
+    <footer>sim</footer>
+</html>

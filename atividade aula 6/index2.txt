@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <header>cabeça</header>
+    <nav>ombro</nav>
+    <section>
+        <article>joelho e pe</article>
+        <aside>joelho</aside><aside>e pe</aside>
+    </section>
+    <section>
+        oi
+        <aside>helder</aside>
+    </section>
+</html>

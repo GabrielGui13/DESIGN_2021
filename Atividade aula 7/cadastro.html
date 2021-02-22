@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="utf-8">	
+<meta name="Author" content="Gabriel Guilherme">
+<meta name="keywords" content="Formulários, Inputs, Textarea"> 
+</head>
+
+<body>
+	<form methot="post" action="atividade07.html">
+		<h1>Cadastro</h1>
+		<p> Complete todos os campos abaixo </p>
+		<br>
+		<fieldset>
+			<legend>Dados Pessoais</legend>
+			<label>Login:</label>
+			<input type="text" required name="Nome" size="20" maxlength="20" placeholder="Digite seu nome">
+			<br>
+			<label>Senha:</label>
+            <input type="password" required name="senha" size="20" maxlength="16" placeholder="Digite sua senha">
+            <br><br>
+ 		</fieldset>
+ 		<br>
+ 		<fieldset>
+             <legend>Características Pesssoais</legend>
+             <label> Como você conheceu nosso site? </label>
+             <select required>
+                 <option value="amigos"> Amigos </option>
+                 <option value="redes sociais"> Redes sociais </option>
+                 <option value="funcionários"> Funcionários </option>
+             </select>	 
+		</fieldset>
+		<fieldset>
+			 	<label> Qual o seu sexo? </label> <br>
+			 	<input type="radio" name="masculino" value="masculino"> Masculino <br>
+			 	<input type="radio" name="feminino" value="feminino"> Feminino <br>
+			 	<input type="radio" name="outros" value="outros"> Outros <br> 
+		</fieldset>
+        <br>
+        <fieldset>
+			<legend> Sobre você: </legend>
+        	<label>Como você conheceu este site?</label>
+        	<br>
+        	<textarea name="informaçoes" placeholder="Digite aqui" id="" cols="30" rows="10"></textarea>
+            <br> <br>
+			<input type="checkbox" value="termos" required> Concordo com os <a href="TERMOS E CONDIÇÕES.pdf" download> Termos e Condições </a>
+			<br> <br>
+        	<a href="site.html"> <button type="submit"> <image src="https://images.vexels.com/media/users/3/141175/isolated/preview/e14efe1ade7ad8e498932359fefc2605-enviar-bot-atilde-o-roxo-by-vexels.png" width="50" height="50" href="login.html">
+			</button></a>
+        </fieldset>	
+
+
+
+    </form>
+</body>
+</html>

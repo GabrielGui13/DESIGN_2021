@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <nav>
+            cliver
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <section>voce</section>
+            <section>pode</section>
+            <section>me dar</section>
+            <aside>emily?</aside>
+        </article>
+    </main>
+
+    <footer>
+        <nav>por favor</nav>
+    </footer>
+</html>
