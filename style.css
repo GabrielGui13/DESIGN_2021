@@ -5,7 +5,7 @@
 }
 
 #container {
-    background-color: #87CEFA;
+    background: #87CEFA;
     width: 100vw;
     height: 95.7vh;
     display: flex;
