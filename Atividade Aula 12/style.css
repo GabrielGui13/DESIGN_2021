@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#images {
+    background: url(https://i.pinimg.com/originals/1e/fe/86/1efe86e96a62921a861fa94a6fed4503.jpg) left top no-repeat, url(http://pm1.narvii.com/6474/3caa24ddf7f341acae14a20d66a62867ef5e4ee8_00.jpg) center center no-repeat, url(https://www.vivernatural.com.br/wp-content/uploads/2019/09/ar1-min.jpg) right bottom no-repeat;
+    padding: 15px;
+    width: 100vw;
+    height: 100vh;
+}
