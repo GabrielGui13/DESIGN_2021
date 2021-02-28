@@ -13,21 +13,6 @@ setInterval(() => {
     return relogio.innerHTML = `${hora}:${minuto}:${segundo}`
 }, 500)
 
-/*setInterval((fundo) => {
-    const horario = new Date()
-    let hora = horario.getHours()
-
-    if (hora >= 5 && hora < 12) {
-        fundo = "#87CEFA"
-    }
-    if (hora >= 12 && hora < 18) {
-        fundo = "#F4A460"
-    }
-    if (hora >= 18 && hora < 5) {
-        fundo = "#4B0082"
-    }
-}, 500);*/
-
 function alterarFundo() {
     var fundo ='white'
     const horario = new Date()
