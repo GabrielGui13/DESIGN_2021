@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    text-align: center;
+    margin: auto;
+    border: 2px solid black;
+    width: auto;
+    padding: 20px;
+    margin-top: 5px;
+}
+
+#q1 {
+    text-align: justify;
+    color: green;
+    text-decoration-line: overline;
+    text-transform: lowercase;
+    text-indent: 3em;
+}
+
+#q2 {
+    text-indent: 0.6em;
+    text-transform: capitalize;
+    line-height: 4px;
+    letter-spacing: 0.4px;
+    word-spacing: 0.2px;
+}
+
+#q3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 26px;
+    text-align: right;
+}

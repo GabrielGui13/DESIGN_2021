@@ -1,0 +1,40 @@
+/* pagina 1 */
+.background {
+    background-image: url(sol.jpg);
+    background-repeat: repeat;
+}
+
+/* pagina 2 */
+.background {
+    background-image: url(sol.jpg);
+    background-repeat: repeat;
+    background-position: top;
+}
+
+/* pagina 3 */
+.divtext {
+    background-image: url(sol.jpg);
+    background-repeat: repeat;
+    background-position: top center;
+}   
+
+/* pagina 4 */
+.background {
+    background-image: url(sol.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+}   
+
+/* pagina 5 */
+.background {
+    background-image: url(sol.jpg);
+    background-repeat: repeat;
+    background-position: left;
+} 
+
+/* pagina 6 */
+.divtext {
+    background-image: url(sol.jpg);
+    background-repeat: repeat;
+    background-position: right center;
+}   
