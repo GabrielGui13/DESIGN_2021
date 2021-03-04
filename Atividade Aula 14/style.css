@@ -35,7 +35,7 @@ header {
     font-family: monospace;
     font-weight: bolder;
     font-size: 30px;
-    display: block;
+    display: none;
 }
 
 table {
