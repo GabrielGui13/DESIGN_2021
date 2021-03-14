@@ -1,38 +1,92 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="utf-8">
+    <head>
+        <meta charset="utf-8">
+        <title>Pseudo classes</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <section class="containerbird">
+                <div class="separador">
+                    <div class="s-left">
+                      <div class="line"></div>
+                    </div>
+                    <img src="bird.png"alt="imagem qualquer">
+                    <div class="s-right">
+                      <div class="line"></div>
+                    </div>
+                  </div>
+            </section>
+        </header>
+        <main>
+            <section id="planos">
+                <section class="container">
+                    <!-- primeiro article -->
+                    <article>
+                        <h2>Autonomo</h2>
+                        <section>R$49/mês</section>
+                        <ul>
+                            <li>Até <strong>2 usuários</strong></li>
+                            <li><strong>1GB</strong> de armazenamento</li>
+                            <li>Lançamentos ilimitados</li>
+                            <li>Acesso seguro</strong></li>
+                            <li>Sem fidelidade</strong></li>
+                        </ul>
+                        <footer>
+                            <a href="assine.html" class="botao">Assinar</a>
+                        </footer>
+                    </article>
 
-<head>
-<meta charset="utf-8">	
-<meta name="Author" content="Gabriel Guilherme">
-<meta name="keywords" content="Formulários, Inputs, Textarea"> 
-<link rel="stylesheet" type="text/css" href="style.css">
-<title> Atividade Aula 17 </title>
-</head>
+                     <!-- segundo article -->
+                     <article>
+                        <h2>Micro</h2>
+                        <section>R$59/mês</section>
+                        <ul>
+                            <li>Até <strong>6 usuários</strong></li>
+                            <li><strong>3GB</strong> de armazenamento</li>
+                            <li>Lançamentos ilimitados</li>
+                            <li>Acesso seguro</strong></li>
+                            <li>Sem fidelidade</strong></li>
+                        </ul>
+                        <footer>
+                            <a href="assine.html" class="botao">Assinar</a>
+                        </footer>
+                    </article>
 
-<body onload="fundo()">
-    <div>
-        <h2> 1. </h2>
-        <input type="text" id="nome"> <br>
-        <button type="button" onclick="imprimirNome()"> Mostrar nome </button> <br>
-        <a id="voltaNome"></a>        
-    </div> 
-    <div>
-        <h2> 2. </h2>
-        <input type="text" id="numeros"> <br>
-        <button type="button" onclick="imprimirNumeros()"> Mostrar multiplicacao </button> <br>
-        <a id="voltaNumeros"></a>        
-    </div>  
-    <div>
-        <h2> 3. </h2>
-        <a> A) true </a> <br>
-        <a> B) false</a> <br>
-        <a> C) true</a> <br>
-        <a> D) true</a>
-    </div>
-    <div class="sim">
-        <button> <a href="relogio\index.html"> Relogio em tempo real </a></button>
-    </div>
-</body>
+                     <!-- terceiro article -->
+                     <article>
+                        <h2>Pequena</h2>
+                        <section>R$89/mês</section>
+                        <ul>
+                            <li>Até <strong>10 usuários</strong></li>
+                            <li><strong>8GB</strong> de armazenamento</li>
+                            <li>Lançamentos ilimitados</li>
+                            <li>Acesso seguro</strong></li>
+                            <li>Sem fidelidade</strong></li>
+                        </ul>
+                        <footer>
+                            <a href="assine.html" class="botao">Assinar</a>
+                        </footer>
+                    </article>
+                    <!-- quarto article -->
+                    <article style="margin: right 0;">
+                        <h2>Média</h2>
+                        <section>R$109/mês</section>
+                        <ul>
+                            <li>Até <strong>20 usuários</strong></li>
+                            <li><strong>15GB</strong> de armazenamento</li>
+                            <li>Lançamentos ilimitados</li>
+                            <li>Acesso seguro</strong></li>
+                            <li>Sem fidelidade</strong></li>
+                        </ul>
+                        <footer>
+                            <a href="assine.html" class="botao">Assinar</a>
+                        </footer>
+                    </article>
 
-<script src="script.js"></script>
+                </section>
+            </section>
+        </main>
+    </body>
 </html>
