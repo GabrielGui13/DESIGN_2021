@@ -1,27 +1,47 @@
 setInterval(() => {
-
     const relogio = document.getElementById("relogio")
-    let data = new Date();
+    const horario = new Date()
 
-    let hora = data.getHours().toString().padStart(2, '0')
-    let minuto = data.getMinutes().toString().padStart(2, '0')
-    let segundo = data.getSeconds().toString().padStart(2, '0')
+    let hora = horario.getHours()
+    let minuto = horario.getMinutes()
+    let segundo = horario.getSeconds()
+
+    if (hora < 10) hora = '0' + hora
+    if (minuto < 10) minuto = '0' + minuto
+    if (segundo < 10) segundo = '0' + segundo
+
     return relogio.innerHTML = `${hora}:${minuto}:${segundo}`
-    
-}, 1000)
+}, 500)
 
+function alterarFundo() {
+    var fundo ='white'
+    const horario = new Date()
+    let hora = horario.getHours()
+
+    if (hora >= 5 && hora < 12) {
+        fundo = '#87CEFA';
+    }
+    if (hora >= 12 && hora < 18) {
+        fundo = '#F4A460';
+    }
+    if (hora >= 18 && hora < 5) {
+        fundo = '#4B0082';
+    }
+
+    return window.document.body.style.backgroundColor = fundo
+}
+
+const diaHoraMes = document.getElementById("data")
 
 setInterval(() => {
+    const data = new Date()
 
-    const setData = document.getElementById("data")
-    let data = new Date();
-
-    let ano = data.getFullYear().toString()
+    let dia = data.getUTCDate()
     let mes = data.getMonth()
-    let dia = data.getDate().toString().padStart(2, '0')
+    let ano = data.getFullYear()
 
     switch (mes) {
-        case '0': 
+        case 0: 
             mes = 'Janeiro'
             break
         case 1:
@@ -59,25 +79,5 @@ setInterval(() => {
             break
     }
 
-    return setData.innerHTML = `${dia} de ${mes} de ${ano}`
-
-}, 1000)
-
-setInterval (() => {
-
-    let data = new Date()
-    let hora = data.getHours()
-    let fundo = 'white'
-    
-    if (hora >= 5 && hora < 12) {
-        fundo = '#87CEFA';
-    }
-    if (hora >= 12 && hora < 18) {
-        fundo = '#F4A460';
-    }
-    else {
-        fundo = '#4B0082'
-    }
-
-    return document.getElementById('container').style.background = fundo
-}, 1000)
+    return diaHoraMes.innerHTML = `${dia} de ${mes} de ${ano}`
+}, 500);

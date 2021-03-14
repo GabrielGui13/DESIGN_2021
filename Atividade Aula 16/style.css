@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    transition: 7s background;
+}
+
+div {
+    text-align: center;
+    margin-top: 30px;
+}
+
+a {
+    margin-top: 25px;
+    font-family: monospace;    
+    font-weight: bolder;
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    margin-top: 10px;
+} 
+
+.sim button {
+    background-color: black;
+}
+
+h2 {
+    color: white;
+}
