@@ -1,0 +1,55 @@
+<html lang="pt-br">
+
+<head>
+<meta charset="utf-8">	
+<meta name="Author" content="Gabriel Guilherme">
+<meta name="keywords" content="Formulários, Inputs, Textarea"> 
+<link rel="stylesheet" type="text/css" href="style.css">
+<title> Atividade Aula 18 </title>
+<script>
+function calcularNumeros() {
+    var numeros = prompt("Digite dois numeros (X X)")
+    var numerosSeparados = numeros.split(' ')
+    var x1 = numerosSeparados[0]
+    var x2 = numerosSeparados[1]
+
+    if (isNaN(x1) == false && isNaN(x2) == false) {
+        alert(`${x1} + ${x2} = ${parseInt(x1) + parseInt(x2)}`)
+        alert(`${x1} - ${x2} = ${x1 - x2}`)
+        alert(`${x1} * ${x2} = ${x1 * x2}`)
+        alert(`${x1} / ${x2} = ${x1 / x2}`)
+    }
+    else alert("Algum dos valores nao e um numero")
+
+    return
+}
+</script>
+</head>
+
+<body>
+    <a id="titulo"> sim </a> <br>
+    <button onclick="trocarTitulo()"> Trocar titulo </button>
+
+    <script>
+        let titulo = document.title
+        document.getElementById("titulo").innerHTML = titulo
+
+        function trocarTitulo() {
+            var ask = prompt("Voce deseja alterar o titulo da pagina? (S) ou (N)")
+
+            if (ask.toUpperCase() == "N") {
+                alert("Ok, você é quem manda!... vou deixar como está.")
+                return
+            }    
+            else if (ask.toUpperCase() == "S") {
+                var mudanca = prompt("Digite o novo titulo")
+                document.getElementById("titulo").innerHTML = mudanca
+                return document.title = mudanca 
+            }
+            else alert("Houve algum erro! Tente novamente")
+        }
+    </script>
+
+    <br>
+    <button onclick="calcularNumeros()"> Calcular numeros </button>
+</body>
