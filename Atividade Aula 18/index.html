@@ -7,6 +7,24 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <title> Atividade Aula 18 </title>
 <script>
+
+function trocarTitulo() {
+    let titulo = document.title
+    document.getElementById("titulo").innerHTML = titulo
+    var ask = prompt("Voce deseja alterar o titulo da pagina? (S) ou (N)")
+
+    if (ask.toUpperCase() == "N") {
+        alert("Ok, você é quem manda!... vou deixar como está.")
+        return
+    }    
+    else if (ask.toUpperCase() == "S") {
+        var mudanca = prompt("Digite o novo titulo")
+        document.getElementById("titulo").innerHTML = mudanca
+        return document.title = mudanca 
+    }
+    else alert("Houve algum erro! Tente novamente")
+}
+
 function calcularNumeros() {
     var numeros = prompt("Digite dois numeros (X X)")
     var numerosSeparados = numeros.split(' ')
@@ -20,36 +38,21 @@ function calcularNumeros() {
         alert(`${x1} / ${x2} = ${x1 / x2}`)
     }
     else alert("Algum dos valores nao e um numero")
-
-    return
 }
+    function load() {
+        var b1 = document.getElementById("botao1");
+        var b2 = document.getElementById("botao2");
+        b1.addEventListener("click", trocarTitulo);
+        b2.addEventListener("click", calcularNumeros);
+    }
+    window.addEventListener("load", load)
+
 </script>
 </head>
 
 <body>
     <a id="titulo"> sim </a> <br>
-    <button onclick="trocarTitulo()"> Trocar titulo </button>
-
-    <script>
-        let titulo = document.title
-        document.getElementById("titulo").innerHTML = titulo
-
-        function trocarTitulo() {
-            var ask = prompt("Voce deseja alterar o titulo da pagina? (S) ou (N)")
-
-            if (ask.toUpperCase() == "N") {
-                alert("Ok, você é quem manda!... vou deixar como está.")
-                return
-            }    
-            else if (ask.toUpperCase() == "S") {
-                var mudanca = prompt("Digite o novo titulo")
-                document.getElementById("titulo").innerHTML = mudanca
-                return document.title = mudanca 
-            }
-            else alert("Houve algum erro! Tente novamente")
-        }
-    </script>
-
+    <button id="botao1"> Trocar titulo </button>
     <br>
-    <button onclick="calcularNumeros()"> Calcular numeros </button>
+    <button id="botao2"> Calcular numeros </button>
 </body>
