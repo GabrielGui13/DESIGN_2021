@@ -12,7 +12,10 @@ function imprimirNome () {
     if (hora >= 12 && hora < 18) {
         retornoBom = 'Boa tarde'
     }
-    else {
+    if (hora >= 18 && hora < 5){
+        retornoBom = 'Boa noite'
+    }
+    else if (hora >= -3 && hora < 0) {
         retornoBom = 'Boa noite'
     }
 
