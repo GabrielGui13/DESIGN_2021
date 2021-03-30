@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="utf-8">	
+<meta name="Author" content="Gabriel Guilherme">
+<meta name="keywords" content="Formulários, Inputs, Textarea"> 
+<link rel="stylesheet" type="text/css" href="style.css">
+<title> Atividade Aula 19 </title>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div {
+    position: absolute;
+    background-color: black;
+    width: 50px;
+	height: 50px;
+    left: 50vw;
+    top: 50vh;
+    transition: width 0.5s, height 0.5s;
+    color: black;
+}
+div a {
+    position: relative;
+    font-size: 10px;
+    top: 35%;
+    left: 22%;
+    transition: color 0.5s;
+}
+</style>
+
+<script>
+    var x = 50;
+	var y = 50;
+
+
+	function tecla(){
+        var jg = document.getElementById("quadrado");
+		var tecla = event.keyCode;
+		if (tecla == 37) {
+			//ir para esquerda
+			x -= 0.5;
+			jg.style.left = x + "vw";
+		}
+        else if (tecla == 39) {
+			//ir para direita
+		    x += 0.5;
+			jg.style.left = x + "vw";
+		}
+		if (tecla == 38) {
+			//subir
+			y -= 0.5;
+			jg.style.top = y + "vh";
+		}
+        else if(tecla == 40) {
+			//descer
+			y += 0.5;
+			jg.style.top = y + "vh";
+		}
+	}
+
+    function pegou() {
+        alert("Essa não você me pegou!")
+        var nome = prompt("Qual o seu nome jogador?");
+        alert("Meus parabêns, " + nome + " você é incrível!")
+    }
+
+    function tamanho(obj, tamanho, cor) {
+        obj.style.width = tamanho
+        obj.style.height = tamanho
+        obj.style.color = cor
+    }
+
+    function load() {
+        var sim = document.getElementById("quadrado");
+        window.addEventListener("keydown", tecla)
+        sim.addEventListener("click", pegou)
+        sim.addEventListener("mouseover", function(event){
+            tamanho(sim, "70px", "white")
+        })
+        sim.addEventListener("mouseout", function(event){
+            tamanho(sim, "50px", "black")
+        })
+    }
+    
+
+    window.addEventListener("load", load)
+</script>
+</head>
+
+<body>
+    <div id="quadrado"><a>me clique</a></div>
+</body>
