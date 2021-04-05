@@ -6,5 +6,5 @@ $(document).ready(function() {
         $("#resultado").text(x);
         $("ul").append(`<li> Sorteio #${aux} = ${x}</li>`);
         aux++;
-    })
+    });
 });
