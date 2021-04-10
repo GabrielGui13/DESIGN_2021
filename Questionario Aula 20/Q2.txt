@@ -1,0 +1,8 @@
+$(document).ready(function(){
+    $("button").click(function(){
+        $("img").css({
+            "border": "solid black 7px",
+            "width": "350px"
+        })
+    })
+})
