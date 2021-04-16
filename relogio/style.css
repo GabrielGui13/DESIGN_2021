@@ -45,7 +45,11 @@ header {
     text-align: center;
     color: black;
     font-family: monospace;
-    font-size: 15px;
     padding-top: 3px;
     padding-bottom: 3px;
+    height: 4vh;
+}
+
+header #data {
+    font-size: 1.4rem;
 }

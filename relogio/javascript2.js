@@ -8,7 +8,7 @@ setInterval(() => {
     let segundo = data.getSeconds().toString().padStart(2, '0')
     return relogio.innerHTML = `${hora}:${minuto}:${segundo}`
     
-}, 1000)
+}, 500)
 
 
 setInterval(() => {
@@ -74,6 +74,9 @@ setInterval (() => {
     }
     if (hora >= 12 && hora < 18) {
         fundo = '#F4A460';
+    }
+    if (hora >= 18 && hora <= 23) {
+        fundo = '#000'
     }
     else {
         fundo = '#4B0082'
